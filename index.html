@@ -480,6 +480,7 @@ body{
 .wish-card textarea::placeholder{color:rgba(231,238,244,.36);letter-spacing:.04em}
 .wish-actions{display:flex;gap:12px;margin-top:18px}
 .wish-actions .btn{flex:1}
+#wishBtn{font-size:15px;letter-spacing:.1em;text-indent:.1em;white-space:nowrap;padding:0 12px}
 .wish-actions .btn.ghost{color:var(--ink-soft)}
 
 /* ===================== 氛围特效层 ===================== */
@@ -841,7 +842,7 @@ body{
     </div>
     <div class="final-actions">
       <button class="btn ghost" id="shareBtn" type="button">分享禹城</button>
-      <button class="btn" id="wishBtn" type="button">写下心愿 · 放飞孔明灯</button>
+      <button class="btn" id="wishBtn" type="button">写下心愿 放飞孔明灯</button>
     </div>
     <p class="src">内容依据：禹城市人民政府官网 · 德州市人民政府官网 · 人民日报《民生周刊》等公开资料</p>
   </section>
@@ -856,7 +857,7 @@ body{
   <div class="lantern-stage" id="lanternStage" aria-hidden="true"></div>
   <div class="wish-mask" id="wishMask" hidden>
     <div class="wish-card" role="dialog" aria-label="写下心愿">
-      <h3>写下心愿 · 放飞孔明灯</h3>
+      <h3>写下心愿 放飞孔明灯</h3>
       <p class="wish-tip">心愿将随灯火升上夜空，代你寄予苍穹。</p>
       <textarea id="wishInput" maxlength="28" rows="3" placeholder="写下一句心愿（28字以内）"></textarea>
       <div class="wish-actions">
