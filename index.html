@@ -114,7 +114,7 @@ body{
 .app.is-cover .btn.ghost{color:#C7B283;border-color:rgba(199,178,131,.5);background:rgba(199,178,131,.08)}
 
 /* ===================== 页眉 ===================== */
-.page-head{margin-bottom:10px;flex:none}
+.page-head{margin-bottom:6px;flex:none}
 .kicker{
   display:inline-flex;align-items:center;gap:7px;
   font-size:12px;letter-spacing:.3em;color:var(--teal-deep);
@@ -317,36 +317,33 @@ body{
 
 /* ===================== 结语 ===================== */
 .result{
-  display:flex;flex-direction:column;align-items:center;gap:10px;
-  padding:6px 0 4px;
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  padding:2px 0 0;
 }
 .big-seal{
-  width:110px;height:110px;border-radius:16px;
+  width:126px;height:126px;border-radius:16px;
   background:var(--cinnabar);color:#F8EED8;
   display:flex;align-items:center;justify-content:center;
-  font-family:var(--font-display);font-size:34px;letter-spacing:.14em;text-indent:.14em;
+  font-family:var(--font-display);font-size:27px;letter-spacing:.1em;text-indent:.1em;
   box-shadow:0 10px 26px rgba(178,58,46,.45), inset 0 0 0 3px rgba(248,238,216,.35);
   animation:sealPop .8s .2s cubic-bezier(.2,1.6,.4,1) both;
 }
 .result-sub{font-size:14px;color:var(--ink-soft);line-height:1.7;text-align:center}
-.route{margin-top:16px}
+.route{margin-top:12px}
 .route h3{
-  font-family:var(--font-display);font-weight:400;font-size:19px;letter-spacing:.1em;
-  color:var(--teal-deep);margin-bottom:12px;
+  font-family:var(--font-display);font-weight:400;font-size:18px;letter-spacing:.1em;
+  color:var(--teal-deep);margin-bottom:4px;
 }
-.route ol{list-style:none;display:flex;flex-direction:column;gap:0;position:relative;margin-left:6px}
-.route li{position:relative;padding:0 0 14px 26px}
+.route ol{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 16px;position:relative;margin-left:0}
+.route li{position:relative;padding:0 0 2px 24px}
 .route li::before{
-  content:"";position:absolute;left:5px;top:6px;width:10px;height:10px;border-radius:50%;
+  content:"";position:absolute;left:3px;top:5px;width:10px;height:10px;border-radius:50%;
   background:var(--cinnabar);box-shadow:0 0 0 3px rgba(210,90,74,.22);
 }
-.route li:not(:last-child)::after{
-  content:"";position:absolute;left:9px;top:20px;bottom:0;width:2px;
-  background:rgba(210,90,74,.32);
-}
-.route li b{display:block;font-size:15.5px;color:var(--ink)}
-.route li span{font-size:12.5px;color:var(--ink-soft);line-height:1.55;display:block;margin-top:2px}
-.final-actions{display:flex;gap:12px;margin-top:20px}
+.route li:not(:last-child)::after{content:none}
+.route li b{display:block;font-size:15px;color:var(--ink)}
+.route li span{font-size:12.5px;color:var(--ink-soft);line-height:1.45;display:block;margin-top:1px}
+.final-actions{display:flex;gap:12px;margin-top:10px}
 .final-actions .btn{flex:1;padding:0 12px}
 
 /* ===================== Toast ===================== */
